@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62, 5%;
+}
+
+body {
+	background-color: #000;
+	color: #fff;
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	gap: 10rem;
+}
+
+.hangedManContainer {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.keyboardBoard {
+	display: flex;
+	justify-content: space-evenly;
+	align-content: left;
+	flex-wrap: wrap;
+	width: 40rem;
+	height: 25rem;
+	font-size: 1.5rem;
+}
+
+img {
+	width: 35rem;
+	height: 25rem;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.board {
+	font-size: 5rem;
+}
+
+.letter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	margin: 0.5rem;
+	padding: 0.5em 1em;
+	border: 1px solid white;
+	border-radius: 15px;
+	transition: background-color 0.3s, color 0.3s, scale 0.3s;
+	cursor: pointer;
+}
+
+.letter:hover {
+	background-color: #fff;
+	color: #000;
+	scale: 1.1;
+}
+.hangManBoard {
+	margin-right: 4em;
+	width: 630px;
+	height: 430px;
+	background-image: url("img/s0.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
